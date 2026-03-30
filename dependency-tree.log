@@ -1,0 +1,443 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] petclinic-root                                                     [pom]
+[[1;34mINFO[m] petclinic-activemq                                                 [jar]
+[[1;34mINFO[m] petclinic-monolith                                                 [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.monolithic.petclinic:petclinic-root[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding petclinic-root 1.0.0-SNAPSHOT                             [1/3][m
+[[1;34mINFO[m]   from pom.xml
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mdependency:3.6.1:tree[m [1m(default-cli)[m @ [36mpetclinic-root[0;1m ---[m
+[[1;34mINFO[m] org.monolithic.petclinic:petclinic-root:pom:1.0.0-SNAPSHOT
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36morg.monolithic.petclinic:petclinic-activemq[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding petclinic-activemq 1.0.0-SNAPSHOT                         [2/3][m
+[[1;34mINFO[m]   from activemq/pom.xml
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mdependency:3.6.1:tree[m [1m(default-cli)[m @ [36mpetclinic-activemq[0;1m ---[m
+[[1;34mINFO[m] org.monolithic.petclinic:petclinic-activemq:jar:1.0.0-SNAPSHOT
+[[1;34mINFO[m] +- org.apache.activemq:activemq-broker:jar:5.18.6:compile
+[[1;34mINFO[m] |  +- org.apache.activemq:activemq-client:jar:5.18.6:compile (version managed from 5.18.6)
+[[1;34mINFO[m] |  |  +- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.13; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- jakarta.jms:jakarta.jms-api:jar:3.1.0:compile (version managed from 2.0.3)
+[[1;34mINFO[m] |  |  \- org.fusesource.hawtbuf:hawtbuf:jar:1.11:compile
+[[1;34mINFO[m] |  +- org.apache.activemq:activemq-openwire-legacy:jar:5.18.6:compile (version managed from 5.18.6)
+[[1;34mINFO[m] |  |  \- (org.apache.activemq:activemq-client:jar:5.18.6:compile - version managed from 5.18.6; omitted for duplicate)
+[[1;34mINFO[m] |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[[1;34mINFO[m] |  \- com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile (version managed from 2.17.2)
+[[1;34mINFO[m] |     +- com.fasterxml.jackson.core:jackson-annotations:jar:2.15.4:compile (version managed from 2.15.4)
+[[1;34mINFO[m] |     \- com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile (version managed from 2.15.4)
+[[1;34mINFO[m] +- org.apache.activemq:activemq-pool:jar:5.18.6:compile
+[[1;34mINFO[m] |  +- org.slf4j:slf4j-api:jar:2.0.16:compile (version managed from 2.0.13)
+[[1;34mINFO[m] |  +- org.apache.activemq:activemq-jms-pool:jar:5.18.6:compile (version managed from 5.18.6)
+[[1;34mINFO[m] |  |  +- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.13; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (jakarta.jms:jakarta.jms-api:jar:3.1.0:compile - version managed from 2.0.3; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile - omitted for duplicate)
+[[1;34mINFO[m] |  |  \- (org.apache.commons:commons-pool2:jar:2.12.0:compile - version managed from 2.12.0; omitted for duplicate)
+[[1;34mINFO[m] |  +- (org.apache.activemq:activemq-client:jar:5.18.6:compile - version managed from 5.18.6; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[[1;34mINFO[m] |  \- org.apache.commons:commons-pool2:jar:2.12.0:compile (version managed from 2.12.0)
+[[1;34mINFO[m] +- io.hawt:hawtio-springboot:jar:2.8.0:compile
+[[1;34mINFO[m] |  +- io.hawt:hawtio-system:jar:2.8.0:compile
+[[1;34mINFO[m] |  |  +- io.hawt:hawtio-core:jar:2.8.0:compile
+[[1;34mINFO[m] |  |  |  +- io.hawt:hawtio-util:jar:2.8.0:compile
+[[1;34mINFO[m] |  |  |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 1.7.26; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 1.7.26; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.jolokia:jolokia-core:jar:1.6.2:compile
+[[1;34mINFO[m] |  |  |  \- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
+[[1;34mINFO[m] |  |  +- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 1.7.26; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.apache.httpcomponents:httpclient:jar:4.5.2:compile
+[[1;34mINFO[m] |  |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:compile (version managed from 4.4.4)
+[[1;34mINFO[m] |  |  |  +- commons-logging:commons-logging:jar:1.2:compile
+[[1;34mINFO[m] |  |  |  \- (commons-codec:commons-codec:jar:1.16.1:compile - version managed from 1.9; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- commons-httpclient:commons-httpclient:jar:3.1:compile
+[[1;34mINFO[m] |  |  |  +- (commons-logging:commons-logging:jar:1.0.4:compile - omitted for conflict with 1.2)
+[[1;34mINFO[m] |  |  |  \- (commons-codec:commons-codec:jar:1.16.1:compile - version managed from 1.2; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- commons-io:commons-io:jar:2.2:compile
+[[1;34mINFO[m] |  |  +- commons-codec:commons-codec:jar:1.16.1:compile (version managed from 1.10)
+[[1;34mINFO[m] |  |  +- com.google.guava:guava:jar:21.0:compile
+[[1;34mINFO[m] |  |  \- org.json:json:jar:20171018:compile
+[[1;34mINFO[m] |  +- (org.springframework.boot:spring-boot-actuator:jar:3.2.12:compile - version managed from 2.1.9.RELEASE; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:3.2.12:compile (version managed from 2.1.9.RELEASE)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot-actuator:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot-autoconfigure:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:runtime - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.15.4:compile (version managed from 2.15.4; scope not updated to compile)
+[[1;34mINFO[m] |  |     +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  \- org.springframework.boot:spring-boot-starter-web:jar:3.2.12:compile (version managed from 2.1.9.RELEASE)
+[[1;34mINFO[m] |     +- org.springframework.boot:spring-boot-starter:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |     |  +- (org.springframework.boot:spring-boot:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- (org.springframework.boot:spring-boot-autoconfigure:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- org.springframework.boot:spring-boot-starter-logging:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |     |  |  +- ch.qos.logback:logback-classic:jar:1.4.14:compile (version managed from 1.4.14)
+[[1;34mINFO[m] |     |  |  |  +- ch.qos.logback:logback-core:jar:1.4.14:compile (version managed from 1.4.14)
+[[1;34mINFO[m] |     |  |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.7; omitted for duplicate)
+[[1;34mINFO[m] |     |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.21.1:compile (version managed from 2.21.1)
+[[1;34mINFO[m] |     |  |  |  +- org.apache.logging.log4j:log4j-api:jar:2.21.1:compile (version managed from 2.21.1)
+[[1;34mINFO[m] |     |  |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 1.7.36; omitted for duplicate)
+[[1;34mINFO[m] |     |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.16:compile (version managed from 2.0.16)
+[[1;34mINFO[m] |     |  |     \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile (version managed from 2.1.1)
+[[1;34mINFO[m] |     |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     |  \- org.yaml:snakeyaml:jar:2.2:compile (version managed from 2.2)
+[[1;34mINFO[m] |     +- org.springframework.boot:spring-boot-starter-json:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |     |  +- (org.springframework.boot:spring-boot-starter:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- (org.springframework:spring-web:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.15.4:compile (version managed from 2.15.4)
+[[1;34mINFO[m] |     |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |     |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- (com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |     |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.15.4:compile (version managed from 2.15.4)
+[[1;34mINFO[m] |     |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |     |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |     +- org.springframework.boot:spring-boot-starter-tomcat:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |     |  +- (jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile - version managed from 2.1.1; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.33:compile (version managed from 10.1.33)
+[[1;34mINFO[m] |     |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.33:compile (version managed from 10.1.33)
+[[1;34mINFO[m] |     |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.33:compile (version managed from 10.1.33)
+[[1;34mINFO[m] |     |     \- (org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.33:compile - version managed from 10.1.33; omitted for duplicate)
+[[1;34mINFO[m] |     +- org.springframework:spring-web:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |     |  +- org.springframework:spring-beans:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |     |  |  \- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     |  \- io.micrometer:micrometer-observation:jar:1.12.13:compile (version managed from 1.12.12)
+[[1;34mINFO[m] |     |     \- io.micrometer:micrometer-commons:jar:1.12.13:compile (version managed from 1.12.13)
+[[1;34mINFO[m] |     \- org.springframework:spring-webmvc:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |        +- org.springframework:spring-aop:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |        |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        |  \- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        +- (org.springframework:spring-context:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        +- org.springframework:spring-expression:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |        |  \- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        \- (org.springframework:spring-web:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-actuator:jar:3.2.12:compile
+[[1;34mINFO[m] |  \- org.springframework.boot:spring-boot:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |     +- org.springframework:spring-core:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |     |  \- org.springframework:spring-jcl:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |     \- org.springframework:spring-context:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |        +- (org.springframework:spring-aop:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        +- (org.springframework:spring-expression:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |        \- (io.micrometer:micrometer-observation:jar:1.12.13:compile - version managed from 1.12.12; omitted for duplicate)
+[[1;34mINFO[m] \- org.springframework.boot:spring-boot-devtools:jar:3.2.12:compile
+[[1;34mINFO[m]    +- (org.springframework.boot:spring-boot:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m]    \- org.springframework.boot:spring-boot-autoconfigure:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m]       \- (org.springframework.boot:spring-boot:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36morg.monolithic.petclinic:petclinic-monolith[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding petclinic-monolith 1.0.0-SNAPSHOT                         [3/3][m
+[[1;34mINFO[m]   from monolith/pom.xml
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mdependency:3.6.1:tree[m [1m(default-cli)[m @ [36mpetclinic-monolith[0;1m ---[m
+[[1;34mINFO[m] org.monolithic.petclinic:petclinic-monolith:jar:1.0.0-SNAPSHOT
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:3.2.12:compile
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-starter-aop:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot-starter:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.springframework:spring-aop:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- org.aspectj:aspectjweaver:jar:1.9.22.1:compile (version managed from 1.9.22.1)
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-starter-jdbc:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot-starter:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- com.zaxxer:HikariCP:jar:5.0.1:compile (version managed from 5.0.1)
+[[1;34mINFO[m] |  |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.0-alpha1; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- org.springframework:spring-jdbc:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |     +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |     +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |     \- (org.springframework:spring-tx:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.hibernate.orm:hibernate-core:jar:6.4.10.Final:compile (version managed from 6.4.10.Final)
+[[1;34mINFO[m] |  |  +- jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile (version managed from 3.1.0)
+[[1;34mINFO[m] |  |  +- jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile (version managed from 2.0.1)
+[[1;34mINFO[m] |  |  +- org.jboss.logging:jboss-logging:jar:3.5.3.Final:runtime (version managed from 3.5.0.Final)
+[[1;34mINFO[m] |  |  +- org.hibernate.common:hibernate-commons-annotations:jar:6.0.6.Final:runtime
+[[1;34mINFO[m] |  |  +- io.smallrye:jandex:jar:3.1.2:runtime
+[[1;34mINFO[m] |  |  +- com.fasterxml:classmate:jar:1.6.0:runtime (version managed from 1.5.1)
+[[1;34mINFO[m] |  |  +- net.bytebuddy:byte-buddy:jar:1.14.19:runtime (version managed from 1.14.11; scope not updated to runtime)
+[[1;34mINFO[m] |  |  +- (jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:runtime - version managed from 4.0.0; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.glassfish.jaxb:jaxb-runtime:jar:4.0.5:runtime (version managed from 4.0.2)
+[[1;34mINFO[m] |  |  |  \- org.glassfish.jaxb:jaxb-core:jar:4.0.5:runtime (version managed from 4.0.5)
+[[1;34mINFO[m] |  |  |     +- (jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:runtime - version managed from 4.0.2; omitted for duplicate)
+[[1;34mINFO[m] |  |  |     +- (jakarta.activation:jakarta.activation-api:jar:2.1.3:runtime - version managed from 2.1.3; omitted for duplicate)
+[[1;34mINFO[m] |  |  |     +- org.eclipse.angus:angus-activation:jar:2.0.2:runtime (version managed from 2.0.2)
+[[1;34mINFO[m] |  |  |     |  \- (jakarta.activation:jakarta.activation-api:jar:2.1.3:runtime - version managed from 2.1.3; omitted for duplicate)
+[[1;34mINFO[m] |  |  |     +- org.glassfish.jaxb:txw2:jar:4.0.5:runtime (version managed from 4.0.5)
+[[1;34mINFO[m] |  |  |     \- com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime (version managed from 4.1.2)
+[[1;34mINFO[m] |  |  +- jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime
+[[1;34mINFO[m] |  |  \- org.antlr:antlr4-runtime:jar:4.13.0:compile
+[[1;34mINFO[m] |  +- org.springframework.data:spring-data-jpa:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  +- org.springframework.data:spring-data-commons:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.2; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.springframework:spring-orm:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-jdbc:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (org.springframework:spring-tx:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.springframework:spring-context:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-aop:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-expression:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (io.micrometer:micrometer-observation:jar:1.12.13:compile - version managed from 1.12.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-aop:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.springframework:spring-tx:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.springframework:spring-beans:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  |  \- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.antlr:antlr4-runtime:jar:4.13.0:compile - omitted for duplicate)
+[[1;34mINFO[m] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile (version managed from 2.0.0)
+[[1;34mINFO[m] |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.2; omitted for duplicate)
+[[1;34mINFO[m] |  \- org.springframework:spring-aspects:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |     \- (org.aspectj:aspectjweaver:jar:1.9.22.1:compile - version managed from 1.9.22.1; omitted for duplicate)
+[[1;34mINFO[m] +- org.hsqldb:hsqldb:jar:2.7.3:runtime
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-starter-activemq:jar:3.2.12:compile
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-starter:jar:3.2.12:compile (version managed from 3.2.12; scope not updated to compile)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot-autoconfigure:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  |  +- ch.qos.logback:logback-classic:jar:1.4.14:compile (version managed from 1.4.14)
+[[1;34mINFO[m] |  |  |  |  +- ch.qos.logback:logback-core:jar:1.4.14:compile (version managed from 1.4.14)
+[[1;34mINFO[m] |  |  |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.7; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.21.1:compile (version managed from 2.21.1)
+[[1;34mINFO[m] |  |  |  |  +- org.apache.logging.log4j:log4j-api:jar:2.21.1:compile (version managed from 2.21.1)
+[[1;34mINFO[m] |  |  |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 1.7.36; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.16:compile (version managed from 2.0.16)
+[[1;34mINFO[m] |  |  |     \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile - version managed from 2.1.1; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- org.yaml:snakeyaml:jar:2.2:compile (version managed from 2.2)
+[[1;34mINFO[m] |  +- org.springframework:spring-jms:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.springframework:spring-messaging:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-tx:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- io.micrometer:micrometer-observation:jar:1.12.13:compile (version managed from 1.12.12)
+[[1;34mINFO[m] |  |     \- io.micrometer:micrometer-commons:jar:1.12.13:compile (version managed from 1.12.13)
+[[1;34mINFO[m] |  \- org.apache.activemq:activemq-client-jakarta:jar:5.18.6:compile (version managed from 5.18.6)
+[[1;34mINFO[m] |     +- jakarta.jms:jakarta.jms-api:jar:3.1.0:compile (version managed from 3.1.0)
+[[1;34mINFO[m] |     +- org.fusesource.hawtbuf:hawtbuf:jar:1.11:compile
+[[1;34mINFO[m] |     \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.13; omitted for duplicate)
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-starter-web:jar:3.2.12:compile
+[[1;34mINFO[m] |  +- (org.springframework.boot:spring-boot-starter:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-starter-json:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot-starter:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-web:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.15.4:compile (version managed from 2.15.4)
+[[1;34mINFO[m] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.15.4:compile (version managed from 2.15.4)
+[[1;34mINFO[m] |  |  |  +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.15.4:compile (version managed from 2.15.4)
+[[1;34mINFO[m] |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:3.2.12:compile (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  +- (jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile - version managed from 2.1.1; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.33:compile (version managed from 10.1.33)
+[[1;34mINFO[m] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.33:compile (version managed from 10.1.33)
+[[1;34mINFO[m] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.33:compile (version managed from 10.1.33)
+[[1;34mINFO[m] |  |     \- (org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.33:compile - version managed from 10.1.33; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.springframework:spring-web:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- (io.micrometer:micrometer-observation:jar:1.12.13:compile - version managed from 1.12.12; omitted for duplicate)
+[[1;34mINFO[m] |  \- org.springframework:spring-webmvc:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |     +- (org.springframework:spring-aop:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     +- (org.springframework:spring-beans:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     +- (org.springframework:spring-context:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     +- org.springframework:spring-expression:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |     |  \- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |     \- (org.springframework:spring-web:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-starter-thymeleaf:jar:3.2.12:compile
+[[1;34mINFO[m] |  +- (org.springframework.boot:spring-boot-starter:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  \- org.thymeleaf:thymeleaf-spring6:jar:3.1.2.RELEASE:compile (version managed from 3.1.2.RELEASE)
+[[1;34mINFO[m] |     +- org.thymeleaf:thymeleaf:jar:3.1.2.RELEASE:compile (version managed from 3.1.2.RELEASE)
+[[1;34mINFO[m] |     |  +- org.attoparser:attoparser:jar:2.0.7.RELEASE:compile
+[[1;34mINFO[m] |     |  +- org.unbescape:unbescape:jar:1.1.6.RELEASE:compile
+[[1;34mINFO[m] |     |  \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.7; omitted for duplicate)
+[[1;34mINFO[m] |     \- (org.slf4j:slf4j-api:jar:2.0.16:compile - version managed from 2.0.7; omitted for duplicate)
+[[1;34mINFO[m] +- org.webjars:webjars-locator-core:jar:0.55:compile
+[[1;34mINFO[m] |  +- org.slf4j:slf4j-api:jar:2.0.16:compile (version managed from 2.0.9)
+[[1;34mINFO[m] |  +- io.github.classgraph:classgraph:jar:4.8.149:compile
+[[1;34mINFO[m] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile (version managed from 2.15.2)
+[[1;34mINFO[m] +- org.webjars:jquery:jar:2.2.4:compile
+[[1;34mINFO[m] +- org.webjars:jquery-ui:jar:1.11.4:compile
+[[1;34mINFO[m] |  \- (org.webjars:jquery:jar:1.11.1:compile - omitted for conflict with 2.2.4)
+[[1;34mINFO[m] +- org.webjars:bootstrap:jar:3.3.6:compile
+[[1;34mINFO[m] |  \- (org.webjars:jquery:jar:1.11.1:compile - omitted for conflict with 2.2.4)
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-devtools:jar:3.2.12:compile
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot:jar:3.2.12:compile (version managed from 3.2.12; scope not updated to compile)
+[[1;34mINFO[m] |  |  +- (org.springframework:spring-core:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- (org.springframework:spring-context:jar:6.1.15:compile - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  \- org.springframework.boot:spring-boot-autoconfigure:jar:3.2.12:compile (version managed from 3.2.12; scope not updated to compile)
+[[1;34mINFO[m] |     \- (org.springframework.boot:spring-boot:jar:3.2.12:compile - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] +- org.springframework.boot:spring-boot-starter-test:jar:3.2.12:test
+[[1;34mINFO[m] |  +- (org.springframework.boot:spring-boot-starter:jar:3.2.12:test - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-test:jar:3.2.12:test (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  \- (org.springframework.boot:spring-boot:jar:3.2.12:test - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:3.2.12:test (version managed from 3.2.12)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot:jar:3.2.12:test - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- (org.springframework.boot:spring-boot-test:jar:3.2.12:test - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- (org.springframework.boot:spring-boot-autoconfigure:jar:3.2.12:test - version managed from 3.2.12; omitted for duplicate)
+[[1;34mINFO[m] |  +- com.jayway.jsonpath:json-path:jar:2.9.0:test (version managed from 2.9.0)
+[[1;34mINFO[m] |  |  +- (net.minidev:json-smart:jar:2.5.1:test - version managed from 2.5.0; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.11; omitted for duplicate)
+[[1;34mINFO[m] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:runtime (version managed from 4.0.2; scope not updated to runtime)
+[[1;34mINFO[m] |  |  \- jakarta.activation:jakarta.activation-api:jar:2.1.3:runtime (version managed from 2.1.3)
+[[1;34mINFO[m] |  +- net.minidev:json-smart:jar:2.5.1:test (version managed from 2.5.1)
+[[1;34mINFO[m] |  |  \- net.minidev:accessors-smart:jar:2.5.1:test
+[[1;34mINFO[m] |  |     \- (org.ow2.asm:asm:jar:9.6:test - omitted for conflict with 7.0)
+[[1;34mINFO[m] |  +- org.assertj:assertj-core:jar:3.24.2:test (version managed from 3.24.2)
+[[1;34mINFO[m] |  |  \- (net.bytebuddy:byte-buddy:jar:1.14.19:test - version managed from 1.12.21; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.awaitility:awaitility:jar:4.2.2:test (version managed from 4.2.2)
+[[1;34mINFO[m] |  |  \- (org.hamcrest:hamcrest:jar:2.2:test - version managed from 2.1; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.hamcrest:hamcrest:jar:2.2:test (version managed from 2.2)
+[[1;34mINFO[m] |  +- org.junit.jupiter:junit-jupiter:jar:5.10.5:test (version managed from 5.10.5)
+[[1;34mINFO[m] |  |  +- org.junit.jupiter:junit-jupiter-api:jar:5.10.5:test (version managed from 5.10.5)
+[[1;34mINFO[m] |  |  |  +- (org.opentest4j:opentest4j:jar:1.3.0:test - omitted for conflict with 1.1.1)
+[[1;34mINFO[m] |  |  |  +- org.junit.platform:junit-platform-commons:jar:1.10.5:test (version managed from 1.10.5)
+[[1;34mINFO[m] |  |  |  |  \- (org.apiguardian:apiguardian-api:jar:1.1.2:test - omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[[1;34mINFO[m] |  |  +- org.junit.jupiter:junit-jupiter-params:jar:5.10.5:test (version managed from 5.10.5)
+[[1;34mINFO[m] |  |  |  +- (org.junit.jupiter:junit-jupiter-api:jar:5.10.5:test - version managed from 5.10.5; omitted for duplicate)
+[[1;34mINFO[m] |  |  |  \- (org.apiguardian:apiguardian-api:jar:1.1.2:test - omitted for duplicate)
+[[1;34mINFO[m] |  |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.10.5:test (version managed from 5.10.5)
+[[1;34mINFO[m] |  |     +- org.junit.platform:junit-platform-engine:jar:1.10.5:test (version managed from 1.10.5)
+[[1;34mINFO[m] |  |     |  +- (org.opentest4j:opentest4j:jar:1.3.0:test - omitted for conflict with 1.1.1)
+[[1;34mINFO[m] |  |     |  +- (org.junit.platform:junit-platform-commons:jar:1.10.5:test - version managed from 1.10.5; omitted for duplicate)
+[[1;34mINFO[m] |  |     |  \- (org.apiguardian:apiguardian-api:jar:1.1.2:test - omitted for duplicate)
+[[1;34mINFO[m] |  |     +- (org.junit.jupiter:junit-jupiter-api:jar:5.10.5:test - version managed from 5.10.5; omitted for duplicate)
+[[1;34mINFO[m] |  |     \- (org.apiguardian:apiguardian-api:jar:1.1.2:test - omitted for duplicate)
+[[1;34mINFO[m] |  +- org.mockito:mockito-core:jar:5.7.0:test (version managed from 5.7.0)
+[[1;34mINFO[m] |  |  +- (net.bytebuddy:byte-buddy:jar:1.14.19:test - version managed from 1.14.9; omitted for duplicate)
+[[1;34mINFO[m] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.14.19:test (version managed from 1.14.9)
+[[1;34mINFO[m] |  |  \- org.objenesis:objenesis:jar:3.3:test
+[[1;34mINFO[m] |  +- org.mockito:mockito-junit-jupiter:jar:5.7.0:test (version managed from 5.7.0)
+[[1;34mINFO[m] |  |  +- (org.mockito:mockito-core:jar:5.7.0:test - version managed from 5.7.0; omitted for duplicate)
+[[1;34mINFO[m] |  |  \- (org.junit.jupiter:junit-jupiter-api:jar:5.10.5:test - version managed from 5.10.0; omitted for duplicate)
+[[1;34mINFO[m] |  +- org.skyscreamer:jsonassert:jar:1.5.3:test (version managed from 1.5.3)
+[[1;34mINFO[m] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[[1;34mINFO[m] |  +- org.springframework:spring-core:jar:6.1.15:compile (version managed from 6.1.15; scope not updated to compile)
+[[1;34mINFO[m] |  |  \- org.springframework:spring-jcl:jar:6.1.15:compile (version managed from 6.1.15)
+[[1;34mINFO[m] |  +- org.springframework:spring-test:jar:6.1.15:test (version managed from 6.1.15)
+[[1;34mINFO[m] |  |  \- (org.springframework:spring-core:jar:6.1.15:test - version managed from 6.1.15; omitted for duplicate)
+[[1;34mINFO[m] |  \- org.xmlunit:xmlunit-core:jar:2.9.1:test (version managed from 2.9.1)
+[[1;34mINFO[m] |     \- (jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:test - version managed from 2.3.3; omitted for duplicate)
+[[1;34mINFO[m] \- com.github.tomakehurst:wiremock-jre8:jar:2.26.0:test
+[[1;34mINFO[m]    +- org.eclipse.jetty:jetty-server:jar:12.0.15:test (version managed from 9.4.20.v20190813)
+[[1;34mINFO[m]    |  +- org.eclipse.jetty:jetty-http:jar:12.0.15:test (version managed from 12.0.15)
+[[1;34mINFO[m]    |  |  +- (org.eclipse.jetty:jetty-io:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |  |  +- (org.eclipse.jetty:jetty-util:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    |  +- org.eclipse.jetty:jetty-io:jar:12.0.15:test (version managed from 12.0.15)
+[[1;34mINFO[m]    |  |  +- (org.eclipse.jetty:jetty-util:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    +- org.eclipse.jetty:jetty-servlet:jar:9.4.20.v20190813:test
+[[1;34mINFO[m]    |  \- org.eclipse.jetty:jetty-security:jar:12.0.15:test (version managed from 9.4.20.v20190813)
+[[1;34mINFO[m]    |     +- (org.eclipse.jetty:jetty-server:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |     \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    +- org.eclipse.jetty:jetty-servlets:jar:9.4.20.v20190813:test
+[[1;34mINFO[m]    |  +- org.eclipse.jetty:jetty-continuation:jar:9.4.20.v20190813:test
+[[1;34mINFO[m]    |  +- (org.eclipse.jetty:jetty-http:jar:12.0.15:test - version managed from 9.4.20.v20190813; omitted for duplicate)
+[[1;34mINFO[m]    |  +- org.eclipse.jetty:jetty-util:jar:12.0.15:test (version managed from 9.4.20.v20190813)
+[[1;34mINFO[m]    |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    |  \- (org.eclipse.jetty:jetty-io:jar:12.0.15:test - version managed from 9.4.20.v20190813; omitted for duplicate)
+[[1;34mINFO[m]    +- org.eclipse.jetty:jetty-webapp:jar:9.4.20.v20190813:test
+[[1;34mINFO[m]    |  +- org.eclipse.jetty:jetty-xml:jar:12.0.15:test (version managed from 9.4.20.v20190813)
+[[1;34mINFO[m]    |  |  +- (org.eclipse.jetty:jetty-util:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    |  \- (org.eclipse.jetty:jetty-servlet:jar:9.4.20.v20190813:test - omitted for duplicate)
+[[1;34mINFO[m]    +- com.google.guava:guava:jar:27.0.1-jre:test
+[[1;34mINFO[m]    |  +- com.google.guava:failureaccess:jar:1.0.1:test
+[[1;34mINFO[m]    |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:test
+[[1;34mINFO[m]    |  +- com.google.code.findbugs:jsr305:jar:3.0.2:test
+[[1;34mINFO[m]    |  +- org.checkerframework:checker-qual:jar:2.5.2:test
+[[1;34mINFO[m]    |  +- com.google.errorprone:error_prone_annotations:jar:2.2.0:test
+[[1;34mINFO[m]    |  +- com.google.j2objc:j2objc-annotations:jar:1.1:test
+[[1;34mINFO[m]    |  \- org.codehaus.mojo:animal-sniffer-annotations:jar:1.17:test
+[[1;34mINFO[m]    +- (com.fasterxml.jackson.core:jackson-core:jar:2.15.4:test - version managed from 2.10.0; omitted for duplicate)
+[[1;34mINFO[m]    +- com.fasterxml.jackson.core:jackson-annotations:jar:2.15.4:compile (version managed from 2.10.0)
+[[1;34mINFO[m]    +- com.fasterxml.jackson.core:jackson-databind:jar:2.15.4:compile (version managed from 2.10.0)
+[[1;34mINFO[m]    |  +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m]    |  \- (com.fasterxml.jackson.core:jackson-core:jar:2.15.4:compile - version managed from 2.15.4; omitted for duplicate)
+[[1;34mINFO[m]    +- org.apache.httpcomponents:httpclient:jar:4.5.6:test
+[[1;34mINFO[m]    |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:test (version managed from 4.4.10)
+[[1;34mINFO[m]    |  +- commons-logging:commons-logging:jar:1.2:test
+[[1;34mINFO[m]    |  \- commons-codec:commons-codec:jar:1.16.1:test (version managed from 1.10)
+[[1;34mINFO[m]    +- (org.xmlunit:xmlunit-core:jar:2.9.1:test - version managed from 2.6.2; omitted for duplicate)
+[[1;34mINFO[m]    +- org.xmlunit:xmlunit-legacy:jar:2.9.1:test (version managed from 2.6.2)
+[[1;34mINFO[m]    |  \- (org.xmlunit:xmlunit-core:jar:2.9.1:test - version managed from 2.9.1; omitted for duplicate)
+[[1;34mINFO[m]    +- org.xmlunit:xmlunit-placeholders:jar:2.9.1:test (version managed from 2.6.2)
+[[1;34mINFO[m]    |  \- (org.xmlunit:xmlunit-core:jar:2.9.1:test - version managed from 2.9.1; omitted for duplicate)
+[[1;34mINFO[m]    +- (com.jayway.jsonpath:json-path:jar:2.9.0:test - version managed from 2.4.0; omitted for duplicate)
+[[1;34mINFO[m]    +- org.ow2.asm:asm:jar:7.0:test
+[[1;34mINFO[m]    +- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 1.7.12; omitted for duplicate)
+[[1;34mINFO[m]    +- net.sf.jopt-simple:jopt-simple:jar:5.0.3:test
+[[1;34mINFO[m]    +- org.apache.commons:commons-lang3:jar:3.13.0:test (version managed from 3.7)
+[[1;34mINFO[m]    +- com.github.jknack:handlebars:jar:4.1.2:test
+[[1;34mINFO[m]    |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 1.7.25; omitted for duplicate)
+[[1;34mINFO[m]    +- com.github.jknack:handlebars-helpers:jar:4.1.2:test
+[[1;34mINFO[m]    |  +- (com.github.jknack:handlebars:jar:4.1.2:test - omitted for duplicate)
+[[1;34mINFO[m]    |  \- (org.apache.commons:commons-lang3:jar:3.13.0:test - version managed from 3.8.1; omitted for duplicate)
+[[1;34mINFO[m]    +- com.flipkart.zjsonpatch:zjsonpatch:jar:0.4.4:test
+[[1;34mINFO[m]    +- commons-fileupload:commons-fileupload:jar:1.4:test
+[[1;34mINFO[m]    |  \- commons-io:commons-io:jar:2.2:test
+[[1;34mINFO[m]    +- org.eclipse.jetty.http2:http2-server:jar:9.4.20.v20190813:test
+[[1;34mINFO[m]    |  +- org.eclipse.jetty.http2:http2-common:jar:9.4.20.v20190813:test
+[[1;34mINFO[m]    |  |  \- org.eclipse.jetty.http2:http2-hpack:jar:9.4.20.v20190813:test
+[[1;34mINFO[m]    |  |     +- (org.eclipse.jetty:jetty-util:jar:12.0.15:test - version managed from 9.4.20.v20190813; omitted for duplicate)
+[[1;34mINFO[m]    |  |     +- (org.eclipse.jetty:jetty-http:jar:12.0.15:test - version managed from 9.4.20.v20190813; omitted for duplicate)
+[[1;34mINFO[m]    |  |     \- (org.eclipse.jetty:jetty-io:jar:12.0.15:test - version managed from 9.4.20.v20190813; omitted for duplicate)
+[[1;34mINFO[m]    |  \- (org.eclipse.jetty:jetty-server:jar:12.0.15:test - version managed from 9.4.20.v20190813; omitted for duplicate)
+[[1;34mINFO[m]    +- org.eclipse.jetty:jetty-alpn-server:jar:12.0.15:test (version managed from 9.4.20.v20190813)
+[[1;34mINFO[m]    |  +- (org.eclipse.jetty:jetty-server:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    +- org.eclipse.jetty:jetty-alpn-conscrypt-server:jar:12.0.15:test (version managed from 9.4.20.v20190813)
+[[1;34mINFO[m]    |  +- org.conscrypt:conscrypt-openjdk-uber:jar:2.5.2:test
+[[1;34mINFO[m]    |  +- (org.eclipse.jetty:jetty-alpn-server:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |  +- (org.eclipse.jetty:jetty-io:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    +- org.eclipse.jetty:jetty-alpn-conscrypt-client:jar:12.0.15:test (version managed from 9.4.20.v20190813)
+[[1;34mINFO[m]    |  +- (org.conscrypt:conscrypt-openjdk-uber:jar:2.5.2:test - omitted for duplicate)
+[[1;34mINFO[m]    |  +- org.eclipse.jetty:jetty-alpn-client:jar:12.0.15:test (version managed from 12.0.15)
+[[1;34mINFO[m]    |  |  +- (org.eclipse.jetty:jetty-io:jar:12.0.15:test - version managed from 12.0.15; omitted for duplicate)
+[[1;34mINFO[m]    |  |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    |  \- (org.slf4j:slf4j-api:jar:2.0.16:test - version managed from 2.0.16; omitted for duplicate)
+[[1;34mINFO[m]    \- net.javacrumbs.json-unit:json-unit-core:jar:2.12.0:test
+[[1;34mINFO[m]       +- org.opentest4j:opentest4j:jar:1.1.1:test
+[[1;34mINFO[m]       \- org.hamcrest:hamcrest-core:jar:2.2:test (version managed from 2.1)
+[[1;34mINFO[m]          \- (org.hamcrest:hamcrest:jar:2.2:test - version managed from 2.2; omitted for duplicate)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for petclinic-root 1.0.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] petclinic-root ..................................... [1;32mSUCCESS[m [  0.311 s]
+[[1;34mINFO[m] petclinic-activemq ................................. [1;32mSUCCESS[m [  0.088 s]
+[[1;34mINFO[m] petclinic-monolith ................................. [1;32mSUCCESS[m [  0.099 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.725 s
+[[1;34mINFO[m] Finished at: 2026-03-30T21:49:41Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

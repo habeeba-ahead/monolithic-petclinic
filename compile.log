@@ -1,0 +1,384 @@
+WARNING: A Java agent has been loaded dynamically (/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.9/byte-buddy-agent-1.14.9.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[18,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[19,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[20,36] package javax.validation.constraints does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[20,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[21,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[22,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[23,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[32,2] cannot find symbol
+  symbol: class MappedSuperclass
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[27,2] cannot find symbol
+  symbol: class MappedSuperclass
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[24,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[25,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[26,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[27,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[28,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[29,36] package javax.validation.constraints does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[30,36] package javax.validation.constraints does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[44,2] cannot find symbol
+  symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[45,2] cannot find symbol
+  symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[21,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[22,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[23,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[24,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[25,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[26,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[18,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[19,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[29,2] cannot find symbol
+  symbol: class MappedSuperclass
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[43,2] cannot find symbol
+  symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[44,2] cannot find symbol
+  symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/PetType.java:[18,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/PetType.java:[19,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/PetType.java:[27,2] cannot find symbol
+  symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/PetType.java:[28,2] cannot find symbol
+  symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[20,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[21,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[22,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[23,36] package javax.validation.constraints does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[33,2] cannot find symbol
+  symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[34,2] cannot find symbol
+  symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[24,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[25,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[26,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[27,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[28,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[29,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[40,2] cannot find symbol
+  symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[41,2] cannot find symbol
+  symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Specialty.java:[18,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Specialty.java:[19,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Specialty.java:[26,2] cannot find symbol
+  symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Specialty.java:[27,2] cannot find symbol
+  symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/VisitController.java:[28,24] package javax.validation does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/OwnerController.java:[31,24] package javax.validation does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/PetController.java:[30,24] package javax.validation does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[30,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Person
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[31,6] cannot find symbol
+  symbol:   class NotEmpty
+  location: class org.springframework.samples.petclinic.model.Person
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[34,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Person
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[35,6] cannot find symbol
+  symbol:   class NotEmpty
+  location: class org.springframework.samples.petclinic.model.Person
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[34,6] cannot find symbol
+  symbol:   class Id
+  location: class org.springframework.samples.petclinic.model.BaseEntity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[35,6] cannot find symbol
+  symbol:   class GeneratedValue
+  location: class org.springframework.samples.petclinic.model.BaseEntity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[35,32] cannot find symbol
+  symbol:   variable GenerationType
+  location: class org.springframework.samples.petclinic.model.BaseEntity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[47,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[48,6] cannot find symbol
+  symbol:   class NotEmpty
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[51,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[52,6] cannot find symbol
+  symbol:   class NotEmpty
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[55,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[56,6] cannot find symbol
+  symbol:   class NotEmpty
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[57,6] cannot find symbol
+  symbol:   class Digits
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[60,6] cannot find symbol
+  symbol:   class OneToMany
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[60,26] cannot find symbol
+  symbol:   variable CascadeType
+  location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[47,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[50,6] cannot find symbol
+  symbol:   class ManyToOne
+  location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[51,6] cannot find symbol
+  symbol:   class JoinColumn
+  location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[54,6] cannot find symbol
+  symbol:   class ManyToOne
+  location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[55,6] cannot find symbol
+  symbol:   class JoinColumn
+  location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[58,6] cannot find symbol
+  symbol:   class Transient
+  location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[37,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[41,6] cannot find symbol
+  symbol:   class NotEmpty
+  location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[42,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[45,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[48,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[32,6] cannot find symbol
+  symbol:   class Column
+  location: class org.springframework.samples.petclinic.model.NamedEntity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[44,6] cannot find symbol
+  symbol:   class ManyToMany
+  location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[44,25] cannot find symbol
+  symbol:   variable FetchType
+  location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[45,6] cannot find symbol
+  symbol:   class JoinTable
+  location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[45,57] cannot find symbol
+  symbol:   class JoinColumn
+  location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[45,108] cannot find symbol
+  symbol:   class JoinColumn
+  location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/VisitController.java:[73,40] cannot find symbol
+  symbol:   class Valid
+  location: class org.springframework.samples.petclinic.controller.VisitController
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/OwnerController.java:[64,40] cannot find symbol
+  symbol:   class Valid
+  location: class org.springframework.samples.petclinic.controller.OwnerController
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/OwnerController.java:[112,43] cannot find symbol
+  symbol:   class Valid
+  location: class org.springframework.samples.petclinic.controller.OwnerController
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/PetController.java:[80,53] cannot find symbol
+  symbol:   class Valid
+  location: class org.springframework.samples.petclinic.controller.PetController
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/PetController.java:[104,38] cannot find symbol
+  symbol:   class Valid
+  location: class org.springframework.samples.petclinic.controller.PetController
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m on project [36mpetclinic-monolith[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[18,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[19,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[20,36] package javax.validation.constraints does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[20,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[21,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[22,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[23,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[32,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class MappedSuperclass
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[27,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class MappedSuperclass
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[24,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[25,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[26,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[27,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[28,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[29,36] package javax.validation.constraints does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[30,36] package javax.validation.constraints does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[44,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[45,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[21,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[22,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[23,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[24,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[25,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[26,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[18,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[19,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[29,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class MappedSuperclass
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[43,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[44,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/PetType.java:[18,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/PetType.java:[19,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/PetType.java:[27,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/PetType.java:[28,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[20,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[21,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[22,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[23,36] package javax.validation.constraints does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[33,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[34,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[24,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[25,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[26,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[27,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[28,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[29,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[40,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[41,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Specialty.java:[18,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Specialty.java:[19,25] package javax.persistence does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Specialty.java:[26,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Entity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Specialty.java:[27,2] cannot find symbol
+[[1;31mERROR[m]   symbol: class Table
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/VisitController.java:[28,24] package javax.validation does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/OwnerController.java:[31,24] package javax.validation does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/PetController.java:[30,24] package javax.validation does not exist
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[30,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Person
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[31,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class NotEmpty
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Person
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[34,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Person
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Person.java:[35,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class NotEmpty
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Person
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[34,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Id
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.BaseEntity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[35,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class GeneratedValue
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.BaseEntity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java:[35,32] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable GenerationType
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.BaseEntity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[47,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[48,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class NotEmpty
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[51,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[52,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class NotEmpty
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[55,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[56,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class NotEmpty
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[57,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Digits
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[60,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class OneToMany
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Owner.java:[60,26] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable CascadeType
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Owner
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[47,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[50,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ManyToOne
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[51,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JoinColumn
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[54,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ManyToOne
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[55,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JoinColumn
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Pet.java:[58,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Transient
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Pet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[37,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[41,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class NotEmpty
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[42,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[45,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Visit.java:[48,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Visit
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java:[32,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Column
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.NamedEntity
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[44,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class ManyToMany
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[44,25] cannot find symbol
+[[1;31mERROR[m]   symbol:   variable FetchType
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[45,6] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JoinTable
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[45,57] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JoinColumn
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/model/Vet.java:[45,108] cannot find symbol
+[[1;31mERROR[m]   symbol:   class JoinColumn
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.model.Vet
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/VisitController.java:[73,40] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Valid
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.controller.VisitController
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/OwnerController.java:[64,40] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Valid
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.controller.OwnerController
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/OwnerController.java:[112,43] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Valid
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.controller.OwnerController
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/PetController.java:[80,53] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Valid
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.controller.PetController
+[[1;31mERROR[m] /app/output/e58be227-4ebd-4c20-94cd-3690f41e1d2d/worker-2/repo/monolith/src/main/java/org/springframework/samples/petclinic/controller/PetController.java:[104,38] cannot find symbol
+[[1;31mERROR[m]   symbol:   class Valid
+[[1;31mERROR[m]   location: class org.springframework.samples.petclinic.controller.PetController
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[[1;31mERROR[m] 
+[[1;31mERROR[m] After correcting the problems, you can resume the build with the command
+[[1;31mERROR[m]   [1mmvn <args> -rf :petclinic-monolith[m
