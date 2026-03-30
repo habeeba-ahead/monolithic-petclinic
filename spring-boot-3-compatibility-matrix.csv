@@ -1,0 +1,32 @@
+Dependency,Current Version,Spring Boot 3.2.x Compatible Version,Compatibility Status,Migration Effort,Breaking Changes,Notes
+Spring Boot Parent,2.2.1.RELEASE,3.2.x,Major Upgrade,High,Yes,Requires Java 17+ and javax to jakarta migration
+Java Version,1.8,17+,Major Upgrade,High,Yes,Complete JVM upgrade required
+Spring Framework,5.2.x (managed),6.x,Major Upgrade,High,Yes,Configuration and API changes
+Spring Security,5.2.x (managed),6.x,Major Upgrade,High,Yes,Security configuration changes
+Spring Data JPA,2.2.x (managed),3.x,Major Upgrade,Medium,Yes,Repository interface changes
+Hibernate,5.4.x (managed),6.x,Major Upgrade,High,Yes,JPA 3.0 and jakarta namespace
+Thymeleaf,3.0.x (managed),3.1.x,Minor Upgrade,Low,No,Mostly compatible
+HSQLDB,2.5.x (managed),2.7.x,Minor Upgrade,Low,No,Database compatibility maintained
+Tomcat,9.x (managed),10.x,Major Upgrade,Medium,Yes,Servlet API 5.0 changes
+ActiveMQ Broker,5.15.x (managed),5.18.x,Minor Upgrade,Medium,Possible,JMS API namespace changes
+ActiveMQ Pool,5.15.x (managed),5.18.x,Minor Upgrade,Medium,Possible,Connection pool configuration
+Hawtio SpringBoot,2.8.0,3.0.0+,Major Upgrade,High,Yes,Spring Boot 3 compatibility required
+jQuery,2.2.4,3.6.0+,Major Upgrade,Medium,Yes,API changes and security fixes
+jQuery UI,1.11.4,1.13.0+,Major Upgrade,Medium,Yes,Compatibility with newer jQuery
+Bootstrap,3.3.6,5.3.0+,Major Upgrade,High,Yes,Complete CSS/JS framework rewrite
+WebJars Locator,0.40 (managed),0.50+,Minor Upgrade,Low,No,Path resolution improvements
+WRO4J,1.8.0,Limited Support,High Risk,High,Yes,Consider migration to Webpack/Vite
+WireMock,2.26.0,3.0.0+,Major Upgrade,Medium,Yes,Package name changes
+Maven Compiler Plugin,3.8.1 (managed),3.11.0,Minor Upgrade,Low,No,Java 17 support
+Maven Surefire Plugin,2.22.2 (managed),3.0.0,Major Upgrade,Low,No,JUnit 5 improvements
+Spring Boot DevTools,2.2.1 (managed),3.2.x,Major Upgrade,Low,No,Auto-managed by Spring Boot
+Spring Boot Actuator,2.2.1 (managed),3.2.x,Major Upgrade,Medium,Yes,Endpoint exposure changes
+Spring Boot Test,2.2.1 (managed),3.2.x,Major Upgrade,Medium,Yes,Test slice annotations changes
+Jackson,2.10.x (managed),2.15.x,Minor Upgrade,Low,No,JSON processing compatibility
+Logback,1.2.x (managed),1.4.x,Minor Upgrade,Low,No,Logging configuration compatible
+SLF4J,1.7.x (managed),2.0.x,Major Upgrade,Low,No,API mostly backward compatible
+Micrometer,1.3.x (managed),1.11.x,Minor Upgrade,Low,No,Metrics collection compatibility
+Validation API,2.0.x (managed),3.0.x,Major Upgrade,Medium,Yes,javax.validation to jakarta.validation
+JPA API,2.2 (managed),3.1,Major Upgrade,Medium,Yes,javax.persistence to jakarta.persistence
+Servlet API,4.0 (managed),5.0,Major Upgrade,Medium,Yes,javax.servlet to jakarta.servlet
+JMS API,2.0 (managed),3.1,Major Upgrade,Medium,Yes,javax.jms to jakarta.jms
