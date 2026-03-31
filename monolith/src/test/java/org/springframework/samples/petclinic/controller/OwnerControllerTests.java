@@ -22,11 +22,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.Import;
+import org.springframework.samples.petclinic.config.SecurityConfig;
 import org.springframework.samples.petclinic.model.Owner;
 import org.springframework.samples.petclinic.model.Pet;
 import org.springframework.samples.petclinic.model.PetType;
 import org.springframework.samples.petclinic.model.Visit;
 import org.springframework.samples.petclinic.service.ClinicService;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDate;
@@ -39,6 +42,7 @@ import static org.hamcrest.Matchers.hasProperty;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import static org.mockito.BDDMockito.given;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
@@ -49,6 +53,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @author Colin But
  */
 @WebMvcTest(controllers = {OwnerController.class})
+@Import(SecurityConfig.class)
 class OwnerControllerTests {
 
     private static final int TEST_OWNER_ID = 1;
@@ -88,6 +93,7 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testInitCreationForm() throws Exception {
         mockMvc.perform(get("/owners/new"))
             .andExpect(status().isOk())
@@ -96,8 +102,10 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testProcessCreationFormSuccess() throws Exception {
         mockMvc.perform(post("/owners/new")
+            .with(csrf())
             .param("firstName", "Joe")
             .param("lastName", "Bloggs")
             .param("address", "123 Caramel Street")
@@ -108,8 +116,10 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testProcessCreationFormHasErrors() throws Exception {
         mockMvc.perform(post("/owners/new")
+            .with(csrf())
             .param("firstName", "Joe")
             .param("lastName", "Bloggs")
             .param("city", "London")
@@ -122,6 +132,7 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testInitFindForm() throws Exception {
         mockMvc.perform(get("/owners/find"))
             .andExpect(status().isOk())
@@ -130,6 +141,7 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testProcessFindFormSuccess() throws Exception {
         given(this.service.ownerByLastName("")).willReturn(Arrays.asList(george, new Owner()));
 
@@ -139,6 +151,7 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testProcessFindFormByLastName() throws Exception {
         given(this.service.ownerByLastName(george.getLastName())).willReturn(Arrays.asList(george));
 
@@ -150,6 +163,7 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testProcessFindFormNoOwnersFound() throws Exception {
         mockMvc.perform(get("/owners")
             .param("lastName", "Unknown Surname")
@@ -161,6 +175,7 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testInitUpdateOwnerForm() throws Exception {
         mockMvc.perform(get("/owners/{ownerId}/edit", TEST_OWNER_ID))
             .andExpect(status().isOk())
@@ -174,8 +189,10 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testProcessUpdateOwnerFormSuccess() throws Exception {
         mockMvc.perform(post("/owners/{ownerId}/edit", TEST_OWNER_ID)
+            .with(csrf())
             .param("firstName", "Joe")
             .param("lastName", "Bloggs")
             .param("address", "123 Caramel Street")
@@ -187,8 +204,10 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testProcessUpdateOwnerFormHasErrors() throws Exception {
         mockMvc.perform(post("/owners/{ownerId}/edit", TEST_OWNER_ID)
+            .with(csrf())
             .param("firstName", "Joe")
             .param("lastName", "Bloggs")
             .param("city", "London")
@@ -201,6 +220,7 @@ class OwnerControllerTests {
     }
 
     @Test
+    @WithMockUser
     void testShowOwner() throws Exception {
         mockMvc.perform(get("/owners/{ownerId}", TEST_OWNER_ID))
             .andExpect(status().isOk())
