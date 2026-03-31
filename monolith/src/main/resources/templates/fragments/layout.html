@@ -1,5 +1,5 @@
 <!doctype html>
-<html th:fragment="layout (template, menu)">
+<html th:fragment="layout (template, menu)" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
   <head>
 
@@ -35,7 +35,7 @@
               </button>
           </div>
           <div class="navbar-collapse collapse" id="main-navbar">
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav">
   
                   <li th:fragment="menuItem (path,active,title,glyph,text)" class="active" th:class="${active==menu ? 'active' : ''}">
                       <a th:href="@{__${path}__}" th:title="${title}">
@@ -62,6 +62,30 @@
                   <li th:replace="::menuItem ('/management/revenue','management','management','th-list','Management')">
                       <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
                       <span>Management</span>
+                  </li>
+              </ul>
+              
+              <!-- Authentication section -->
+              <ul class="nav navbar-nav navbar-right">
+                  <li sec:authorize="!isAuthenticated()">
+                      <a th:href="@{/oauth2/authorization/google}">
+                          <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                          <span>Login with Google</span>
+                      </a>
+                  </li>
+                  <li sec:authorize="isAuthenticated()">
+                      <a href="#" class="navbar-text">
+                          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                          <span sec:authentication="name">User</span>
+                      </a>
+                  </li>
+                  <li sec:authorize="isAuthenticated()">
+                      <form th:action="@{/logout}" method="post" style="display: inline;">
+                          <button type="submit" class="btn btn-link navbar-btn" style="color: #777;">
+                              <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                              Logout
+                          </button>
+                      </form>
                   </li>
               </ul>
           </div>
