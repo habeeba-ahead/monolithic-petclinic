@@ -1,3 +1,11 @@
+-- Sample users with BCrypt encrypted passwords (password is 'password' for all)
+INSERT INTO users VALUES (1, 'admin', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBPrpebWenBfLbq7T1dpjqjPu', 'ADMIN', true);
+INSERT INTO users VALUES (2, 'vet1', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBPrpebWenBfLbq7T1dpjqjPu', 'VET', true);
+INSERT INTO users VALUES (3, 'vet2', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBPrpebWenBfLbq7T1dpjqjPu', 'VET', true);
+INSERT INTO users VALUES (4, 'receptionist', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBPrpebWenBfLbq7T1dpjqjPu', 'RECEPTIONIST', true);
+INSERT INTO users VALUES (5, 'owner1', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBPrpebWenBfLbq7T1dpjqjPu', 'OWNER', true);
+INSERT INTO users VALUES (6, 'owner2', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBPrpebWenBfLbq7T1dpjqjPu', 'OWNER', true);
+
 INSERT INTO vets VALUES (1, 'James', 'Carter');
 INSERT INTO vets VALUES (2, 'Helen', 'Leary');
 INSERT INTO vets VALUES (3, 'Linda', 'Douglas');
