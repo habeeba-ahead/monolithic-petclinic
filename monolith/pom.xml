@@ -29,6 +29,12 @@
             <artifactId>spring-boot-starter-activemq</artifactId>
         </dependency>
 
+        <!-- Security dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-oauth2-client</artifactId>
+        </dependency>
+
         <!-- Web dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -37,6 +43,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity5</artifactId>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
@@ -75,6 +85,11 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.github.tomakehurst</groupId>
