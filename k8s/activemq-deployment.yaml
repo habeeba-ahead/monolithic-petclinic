@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: activemq
+  namespace: petclinic
+  labels:
+    app: activemq
+    component: messaging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: activemq
+      component: messaging
+  template:
+    metadata:
+      labels:
+        app: activemq
+        component: messaging
+    spec:
+      containers:
+      - name: activemq
+        image: rmohr/activemq:5.15.9
+        ports:
+        - containerPort: 61616
+          name: openwire
+        - containerPort: 8161
+          name: ui
+        env:
+        - name: ACTIVEMQ_REMOVE_DEFAULT_ACCOUNT
+          value: "true"
+        - name: ACTIVEMQ_ADMIN_LOGIN
+          value: "admin"
+        - name: ACTIVEMQ_ADMIN_PASSWORD
+          value: "admin"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "200m"
+        livenessProbe:
+          tcpSocket:
+            port: 61616
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        readinessProbe:
+          tcpSocket:
+            port: 61616
+          initialDelaySeconds: 10
+          periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: activemq-service
+  namespace: petclinic
+  labels:
+    app: activemq
+    component: messaging
+spec:
+  ports:
+  - port: 61616
+    targetPort: 61616
+    protocol: TCP
+    name: openwire
+  - port: 8161
+    targetPort: 8161
+    protocol: TCP
+    name: ui
+  selector:
+    app: activemq
+    component: messaging

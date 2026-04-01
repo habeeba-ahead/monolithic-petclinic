@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petclinic-app
+  namespace: petclinic
+  labels:
+    app: petclinic
+    component: app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: petclinic
+      component: app
+  template:
+    metadata:
+      labels:
+        app: petclinic
+        component: app
+    spec:
+      containers:
+      - name: petclinic
+        image: gcr.io/PROJECT_ID/petclinic:latest
+        ports:
+        - containerPort: 8080
+          name: http
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: "gke"
+        volumeMounts:
+        - name: config
+          mountPath: /app/config
+          readOnly: true
+        livenessProbe:
+          httpGet:
+            path: /manage/health
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /manage/health/readiness
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+      volumes:
+      - name: config
+        configMap:
+          name: petclinic-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: petclinic-service
+  namespace: petclinic
+  labels:
+    app: petclinic
+    component: app
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    targetPort: 8080
+    protocol: TCP
+    name: http
+  selector:
+    app: petclinic
+    component: app
