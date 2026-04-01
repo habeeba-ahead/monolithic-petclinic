@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: petclinic-config
+  namespace: petclinic
+data:
+  application.properties: |
+    # Database
+    spring.datasource.schema=classpath*:db/schema.sql
+    spring.datasource.data=classpath*:db/data.sql
+    
+    # Web
+    spring.thymeleaf.mode=HTML
+    
+    # JPA
+    spring.jpa.hibernate.ddl-auto=none
+    
+    # ActiveMQ
+    spring.activemq.broker-url=tcp://activemq-service:61616
+    
+    # Internationalization
+    spring.messages.basename=messages/messages
+    
+    # Actuator / Management
+    management.endpoints.web.base-path=/manage
+    management.endpoints.web.exposure.include=*
+    management.endpoint.health.show-details=always
+    management.metrics.export.prometheus.enabled=true
+    
+    # Logging
+    logging.level.org.springframework=INFO
+    logging.level.root=INFO
+    
+    # Server endpoint
+    server.port=8080

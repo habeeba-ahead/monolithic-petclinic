@@ -18,6 +18,7 @@
     <modules>
         <module>activemq</module>
         <module>monolith</module>
+        <module>e2e-tests</module>
     </modules>
 
     <properties>
@@ -39,5 +40,14 @@
             <url>https://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+
+    <profiles>
+        <profile>
+            <id>e2e</id>
+            <modules>
+                <module>e2e-tests</module>
+            </modules>
+        </profile>
+    </profiles>
 
 </project>
