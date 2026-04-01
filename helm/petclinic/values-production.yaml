@@ -1,0 +1,49 @@
+# Production environment values
+environment: production
+replicaCount: 3
+
+image:
+  repository: petclinic
+  tag: v1.0.0
+  pullPolicy: IfNotPresent
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 1Gi
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+# Production database settings
+config:
+  "server.port": "8080"
+  "spring.datasource.url": "jdbc:postgresql://postgres-prod:5432/petclinic"
+  "spring.datasource.username": "petclinic_user"
+  "spring.activemq.broker-url": "tcp://activemq-prod:61616"
+  "management.endpoints.web.base-path": "/manage"
+  "management.endpoints.web.exposure.include": "health,info,metrics"
+  "logging.level.org.springframework": "WARN"
+
+# Production secrets (should be set via --set-string or external secret management)
+secrets:
+  "database-password": "cHJvZC1wYXNzd29yZA=="  # base64 encoded
+  "activemq-password": "YWN0aXZlbXEtcHJvZA=="   # base64 encoded
+
+# Production-specific annotations
+podAnnotations:
+  environment: "production"
+  monitoring: "enabled"
+
+# Enable autoscaling in production
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 70
+
+# Production service configuration
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
