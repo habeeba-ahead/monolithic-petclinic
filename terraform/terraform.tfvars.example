@@ -1,0 +1,19 @@
+# Example Terraform variables file for Pet Clinic infrastructure
+# Copy this file to terraform.tfvars and update the values
+
+# Required variables
+project_id = "your-gcp-project-id"
+region     = "us-central1"
+zone       = "us-central1-a"
+
+# Optional variables with defaults
+cluster_name      = "petclinic-cluster"
+node_count        = 3
+machine_type      = "e2-medium"
+db_instance_name  = "petclinic-db"
+db_version        = "MYSQL_8_0"
+db_tier           = "db-f1-micro"
+network_name      = "petclinic-network"
+subnet_name       = "petclinic-subnet"
+subnet_cidr       = "10.0.0.0/24"
+environment       = "dev"
