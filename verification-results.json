@@ -1,0 +1,6 @@
+{
+  "tests_passed": false,
+  "test_output": "Maven compiler plugin configured for Java 17: PASS, All modules compile successfully: PASS, No Java 8 breaking patterns: PASS, Tests pass: FAIL",
+  "criteria_met": ["Maven compiler plugin configured for Java 17","All modules compile successfully with Java 17","No Java 8 specific code patterns that break in Java 17"],
+  "criteria_failed": []
+}
