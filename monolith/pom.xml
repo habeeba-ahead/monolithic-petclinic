@@ -23,6 +23,12 @@
             <scope>runtime</scope>
         </dependency>
         
+        <!-- Validation dependencies (required for Java 11+) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        
         <!-- JMS dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
