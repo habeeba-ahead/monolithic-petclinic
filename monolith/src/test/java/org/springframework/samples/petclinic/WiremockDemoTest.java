@@ -9,21 +9,24 @@ import org.springframework.web.client.RestTemplate;
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
 import static com.github.tomakehurst.wiremock.client.WireMock.get;
 import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
-import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
+import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class WiremockDemoTest {
 
-    private final WireMockServer wireMock = new WireMockServer(options().port(8089));
+    private WireMockServer wireMock;
 
     @BeforeEach
     void startWireMock() {
+        wireMock = new WireMockServer(wireMockConfig().dynamicPort());
         wireMock.start();
     }
 
     @AfterEach
     void stopWireMock() {
-        wireMock.stop();
+        if (wireMock != null) {
+            wireMock.stop();
+        }
     }
 
     @Test
@@ -33,7 +36,8 @@ public class WiremockDemoTest {
                 .withHeader("Content-Type", "application/json")
                 .withBody("[\"James\", \"Helen\" ]")));
 
-        String[] result = new RestTemplate().getForObject("http://localhost:8089/demo", String[].class);
+        String baseUrl = "http://localhost:" + wireMock.port();
+        String[] result = new RestTemplate().getForObject(baseUrl + "/demo", String[].class);
 
         assertThat(result).containsExactly("James", "Helen");
     }
