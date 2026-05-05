@@ -1,0 +1,58 @@
+# Database
+spring:
+  datasource:
+    schema: classpath*:db/schema.sql
+    data: classpath*:db/data.sql
+  
+  # Web
+  thymeleaf:
+    mode: HTML
+  
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: none
+  
+  # ActiveMQ
+  activemq:
+    broker-url: tcp://localhost:61616
+  
+  # Internationalization
+  messages:
+    basename: messages/messages
+  
+  # OAuth2/OIDC Configuration
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID:your-google-client-id}
+            client-secret: ${GOOGLE_CLIENT_SECRET:your-google-client-secret}
+            scope:
+              - openid
+              - profile
+              - email
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+        provider:
+          google:
+            issuer-uri: https://accounts.google.com
+
+# Actuator / Management
+management:
+  endpoints:
+    web:
+      base-path: /manage
+      exposure:
+        include: "*"
+
+# Logging
+logging:
+  level:
+    org.springframework: INFO
+    # org.springframework.web: DEBUG
+    # org.springframework.context.annotation: TRACE
+
+# Server endpoint
+server:
+  port: 8080
