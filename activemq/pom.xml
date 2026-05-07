@@ -12,23 +12,23 @@
     <artifactId>petclinic-activemq</artifactId>
 
     <dependencies>
-        <!-- JMS dependencies -->
+        <!-- JMS dependencies - Using Artemis for Spring Boot 3.x -->
         <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-broker</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-artemis</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-pool</artifactId>
+            <artifactId>artemis-jakarta-server</artifactId>
         </dependency>
         <dependency>
             <groupId>io.hawt</groupId>
             <artifactId>hawtio-springboot</artifactId>
-            <version>2.8.0</version>
+            <version>4.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-actuator</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>
