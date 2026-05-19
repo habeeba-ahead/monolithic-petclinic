@@ -51,3 +51,9 @@ INSERT INTO visits VALUES (1, 7, '2013-01-01', 'rabies shot', 100);
 INSERT INTO visits VALUES (2, 8, '2013-01-02', 'rabies shot', 100);
 INSERT INTO visits VALUES (3, 8, '2013-01-03', 'neutered', 300);
 INSERT INTO visits VALUES (4, 7, '2013-01-04', 'spayed', 300);
+
+-- Sample users for role-based access control
+-- Note: In production, passwords should be properly hashed
+INSERT INTO users VALUES (1, 'admin', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBItNz2jqsrHh8wMphGIuOCqy', TRUE, 'ADMIN');
+INSERT INTO users VALUES (2, 'vet', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBItNz2jqsrHh8wMphGIuOCqy', TRUE, 'VETERINARIAN');
+INSERT INTO users VALUES (3, 'receptionist', '$2a$10$9ZhDOBp.sRKat4l14ygu/.LscxBjjBItNz2jqsrHh8wMphGIuOCqy', TRUE, 'RECEPTIONIST');

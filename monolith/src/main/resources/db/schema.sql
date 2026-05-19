@@ -5,6 +5,7 @@ DROP TABLE visits IF EXISTS;
 DROP TABLE pets IF EXISTS;
 DROP TABLE types IF EXISTS;
 DROP TABLE owners IF EXISTS;
+DROP TABLE users IF EXISTS;
 
 
 CREATE TABLE vets (
@@ -63,3 +64,12 @@ CREATE TABLE visits (
 );
 ALTER TABLE visits ADD CONSTRAINT fk_visits_pets FOREIGN KEY (pet_id) REFERENCES pets (id);
 CREATE INDEX visits_pet_id ON visits (pet_id);
+
+CREATE TABLE users (
+  id       INTEGER IDENTITY PRIMARY KEY,
+  username VARCHAR(50) UNIQUE NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  enabled  BOOLEAN DEFAULT TRUE,
+  role     VARCHAR(20) NOT NULL
+);
+CREATE INDEX users_username ON users (username);
