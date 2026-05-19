@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security" 
+      th:replace="~{fragments/layout :: layout (~{::body},'user')}">
+
+  <body>
+
+    <h2>User Profile</h2>
+    
+    <div class="row" sec:authorize="isAuthenticated()">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Your Information</h3>
+                </div>
+                <div class="panel-body">
+                    <p><strong>Name:</strong> <span th:text="${name}">User Name</span></p>
+                    <p><strong>Email:</strong> <span th:text="${email}">user@example.com</span></p>
+                    <p><strong>Authentication:</strong> <span sec:authentication="name">User</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row" sec:authorize="!isAuthenticated()">
+        <div class="col-md-12">
+            <div class="alert alert-warning">
+                <p>You need to <a th:href="@{/oauth2/authorization/google}">login</a> to view your profile.</p>
+            </div>
+        </div>
+    </div>
+
+  </body>
+
+</html>
