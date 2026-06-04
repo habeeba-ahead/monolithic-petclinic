@@ -2,6 +2,7 @@ package org.springframework.samples.petclinic.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.samples.petclinic.service.ClinicService;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -14,6 +15,7 @@ public class ManagementController {
     private ClinicService clinicService;
 
     @GetMapping("/management/revenue")
+    @PreAuthorize("hasRole('ADMIN')")
     public String showRevenue(Map<String, Object> model) {
         model.put("revenues", clinicService.listYearlyRevenue());
         return "management/showRevenue";
