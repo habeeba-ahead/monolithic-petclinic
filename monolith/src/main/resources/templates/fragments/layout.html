@@ -1,5 +1,5 @@
 <!doctype html>
-<html th:fragment="layout (template, menu)">
+<html th:fragment="layout (template, menu)" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
   <head>
 
@@ -35,7 +35,7 @@
               </button>
           </div>
           <div class="navbar-collapse collapse" id="main-navbar">
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav">
   
                   <li th:fragment="menuItem (path,active,title,glyph,text)" class="active" th:class="${active==menu ? 'active' : ''}">
                       <a th:href="@{__${path}__}" th:title="${title}">
@@ -49,19 +49,38 @@
                       <span>Home</span>
                   </li>
   
-                  <li th:replace="::menuItem ('/owners','owners','owners','th-list','Owners')">
+                  <li th:replace="::menuItem ('/owners','owners','owners','th-list','Owners')" sec:authorize="hasAnyRole('ADMIN', 'OWNER')">
                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                       <span>Owners</span>
                   </li>
   
-                  <li th:replace="::menuItem ('/vets','vets','veterinarians','th-list','Veterinarians')">
+                  <li th:replace="::menuItem ('/vets','vets','veterinarians','th-list','Veterinarians')" sec:authorize="hasAnyRole('ADMIN', 'VET')">
                       <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
                       <span>Veterinarians</span>
                   </li>
 
-                  <li th:replace="::menuItem ('/management/revenue','management','management','th-list','Management')">
+                  <li th:replace="::menuItem ('/management/revenue','management','management','th-list','Management')" sec:authorize="hasRole('ADMIN')">
                       <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
                       <span>Management</span>
+                  </li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right" sec:authorize="isAuthenticated()">
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                          <span sec:authentication="name">Username</span>
+                          <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li>
+                              <form th:action="@{/logout}" method="post" style="margin: 0;">
+                                  <button type="submit" class="btn btn-link" style="width: 100%; text-align: left; padding: 3px 20px;">
+                                      <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
+                                  </button>
+                              </form>
+                          </li>
+                      </ul>
                   </li>
               </ul>
           </div>
