@@ -20,8 +20,11 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.Import;
+import org.springframework.samples.petclinic.config.SecurityConfig;
 import org.springframework.samples.petclinic.model.YearlyRevenue;
 import org.springframework.samples.petclinic.service.ClinicService;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
@@ -34,6 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 @WebMvcTest(controllers = ManagementController.class)
+@Import(SecurityConfig.class)
 class ManagementControllerTests {
 
     static final List<YearlyRevenue> EXPECTED_REVENUES = asList(
@@ -52,6 +56,7 @@ class ManagementControllerTests {
     }
 
     @Test
+    @WithMockUser(roles = "ADMIN")
     void testShowRevenueHtml() throws Exception {
         mockMvc.perform(get("/management/revenue")) //
             .andExpect(status().isOk()) //
