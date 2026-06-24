@@ -40,4 +40,44 @@
         </license>
     </licenses>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- OWASP Dependency-Check: version pinned explicitly -->
+                <plugin>
+                    <groupId>org.owasp</groupId>
+                    <artifactId>dependency-check-maven</artifactId>
+                    <version>9.2.0</version>
+                    <configuration>
+                        <!-- Fail the build when any dependency has a CVSS score >= 7.0 -->
+                        <failBuildOnCVSS>7</failBuildOnCVSS>
+                        <!-- Produce an HTML report under target/dependency-check-report.html -->
+                        <format>HTML</format>
+                        <!--
+                            NVD API key for CI environments.
+                            Set the NVD_API_KEY environment variable in your CI pipeline.
+                            Omitting the key is allowed for local runs (rate-limited but functional).
+                        -->
+                        <nvdApiKey>${env.NVD_API_KEY}</nvdApiKey>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <!-- Bind OWASP Dependency-Check to the verify phase for all modules -->
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
