@@ -28,9 +28,9 @@
       </tr>
     </table>
   
-    <a th:href="@{{id}/edit(id=${owner.id})}" class="btn btn-default">Edit
+    <a th:href="@{{id}/edit(id=${owner.id})}" class="btn btn-secondary">Edit
       Owner</a>
-    <a th:href="@{{id}/pets/new(id=${owner.id})}" class="btn btn-default">Add
+    <a th:href="@{{id}/pets/new(id=${owner.id})}" class="btn btn-secondary">Add
       New Pet</a>
   
     <br />
@@ -42,18 +42,18 @@
   
       <tr th:each="pet : ${owner.pets}">
         <td valign="top">
-          <dl class="dl-horizontal">
-            <dt>Name</dt>
-            <dd th:text="${pet.name}" /></dd>
-            <dt>Birth Date</dt>
-            <dd
+          <dl class="row">
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9" th:text="${pet.name}" /></dd>
+            <dt class="col-sm-3">Birth Date</dt>
+            <dd class="col-sm-9"
               th:text="${#temporals.format(pet.birthDate, 'yyyy-MM-dd')}" /></dd>
-            <dt>Type</dt>
-            <dd th:text="${pet.type}" /></dd>
+            <dt class="col-sm-3">Type</dt>
+            <dd class="col-sm-9" th:text="${pet.type}" /></dd>
           </dl>
         </td>
         <td valign="top">
-          <table class="table-condensed">
+          <table class="table table-sm">
             <thead>
               <tr>
                 <th>Visit Date</th>
