@@ -15,7 +15,7 @@ public class JmsConfig {
     BrokerService broker() throws Exception {
         BrokerService broker = new BrokerService();
         broker.setPersistent(false);
-        broker.setUseJmx(true);
+        broker.setUseJmx(false);
         broker.addConnector(brokerUrl);
         return broker;
     }
