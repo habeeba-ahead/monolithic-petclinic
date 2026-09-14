@@ -101,6 +101,7 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <skip>true</skip>
                     <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
                     <cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
                     <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
