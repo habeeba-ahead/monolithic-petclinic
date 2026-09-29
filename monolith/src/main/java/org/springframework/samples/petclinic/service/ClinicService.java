@@ -5,6 +5,8 @@ import org.springframework.samples.petclinic.db.PetRepository;
 import org.springframework.samples.petclinic.db.RevenueRepository;
 import org.springframework.samples.petclinic.db.VetRepository;
 import org.springframework.samples.petclinic.db.VisitRepository;
+import org.springframework.samples.petclinic.dto.VetResponse;
+import org.springframework.samples.petclinic.mapper.VetMapper;
 import org.springframework.samples.petclinic.model.Owner;
 import org.springframework.samples.petclinic.model.Pet;
 import org.springframework.samples.petclinic.model.PetType;
@@ -13,6 +15,7 @@ import org.springframework.samples.petclinic.model.Visit;
 import org.springframework.samples.petclinic.model.YearlyRevenue;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -24,19 +27,22 @@ public class ClinicService {
     private final VisitRepository visits;
     private final VetRepository vets;
     private final RevenueRepository revenueRepository;
+    private final VetMapper vetMapper;
 
     public ClinicService(
         OwnerRepository owners,
         PetRepository pets,
         VisitRepository visits,
         VetRepository vets,
-        RevenueRepository revenueRepository
+        RevenueRepository revenueRepository,
+        VetMapper vetMapper
     ) {
         this.owners = owners;
         this.pets = pets;
         this.visits = visits;
         this.vets = vets;
         this.revenueRepository = revenueRepository;
+        this.vetMapper=vetMapper;
     }
 
 
@@ -78,5 +84,12 @@ public class ClinicService {
 
     public List<YearlyRevenue> listYearlyRevenue() {
         return revenueRepository.listYearlyRevenue();
+    }
+
+    public List<VetResponse> getAllVets(){
+        List<VetResponse> vetResponses=new ArrayList<>();
+        for (Vet vet:vets.findAll()){
+            vetResponses.add(vetMapper.toResponse(vet));}
+        return vetResponses;
     }
 }
