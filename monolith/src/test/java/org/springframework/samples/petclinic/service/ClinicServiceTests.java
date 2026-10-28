@@ -50,17 +50,18 @@ class ClinicServiceTests {
 
     @Test
     void shouldFindOwnersByLastName() {
-        Collection<Owner> owners = service.ownerByLastName("Davis");
-        assertThat(owners).hasSize(2);
+        // "Owner" prefix matches all 10 synthetic owners
+        Collection<Owner> owners = service.ownerByLastName("Owner");
+        assertThat(owners).hasSize(10);
 
-        owners = service.ownerByLastName("Daviss");
+        owners = service.ownerByLastName("NoSuchOwner");
         assertThat(owners).isEmpty();
     }
 
     @Test
     void shouldFindSingleOwnerWithPet() {
         Owner owner = service.ownerById(1);
-        assertThat(owner.getLastName()).startsWith("Franklin");
+        assertThat(owner.getLastName()).startsWith("Owner");
         assertThat(owner.getPets()).hasSize(1);
         assertThat(owner.getPets().get(0).getType()).isNotNull();
         assertThat(owner.getPets().get(0).getType().getName()).isEqualTo("cat");
@@ -104,7 +105,7 @@ class ClinicServiceTests {
     void shouldFindPetWithCorrectId() {
         Pet pet7 = service.petById(7);
         assertThat(pet7.getName()).startsWith("Samantha");
-        assertThat(pet7.getOwner().getFirstName()).isEqualTo("Jean");
+        assertThat(pet7.getOwner().getFirstName()).isEqualTo("Test");
     }
 
     @Test
@@ -162,7 +163,7 @@ class ClinicServiceTests {
             .filteredOn(vet -> vet.getId() == 3)
             .hasSize(1)
             .first()
-            .hasFieldOrPropertyWithValue("lastName", "Douglas")
+            .hasFieldOrPropertyWithValue("lastName", "Vet3")
             .hasFieldOrPropertyWithValue("nrOfSpecialties", 2)
             .extracting(Vet::getSpecialties).asList()
             .extracting("name")
