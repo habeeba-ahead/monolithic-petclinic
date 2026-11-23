@@ -24,10 +24,14 @@ import org.springframework.samples.petclinic.model.YearlyRevenue;
 import org.springframework.samples.petclinic.service.ClinicService;
 import org.springframework.test.web.servlet.MockMvc;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.util.List;
 
 import static java.util.Arrays.asList;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.mock;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -57,6 +61,29 @@ class ManagementControllerTests {
             .andExpect(status().isOk()) //
             .andExpect(model().attribute("revenues", EXPECTED_REVENUES)) //
             .andExpect(view().name("management/showRevenue"));
+    }
+
+    @Test
+    void testNoAutowiredFieldAnnotations() {
+        Field[] fields = ManagementController.class.getDeclaredFields();
+        for (Field field : fields) {
+            assertThat(field.isAnnotationPresent(org.springframework.beans.factory.annotation.Autowired.class))
+                .as("Field '%s' should not have @Autowired annotation", field.getName())
+                .isFalse();
+        }
+    }
+
+    @Test
+    void testConstructorInjection() throws Exception {
+        // Verify there is exactly one constructor that accepts ClinicService
+        Constructor<?>[] constructors = ManagementController.class.getDeclaredConstructors();
+        assertThat(constructors).hasSize(1);
+        assertThat(constructors[0].getParameterTypes()).containsExactly(ClinicService.class);
+
+        // Verify the controller can be instantiated without the Spring container
+        ClinicService mockService = mock(ClinicService.class);
+        ManagementController controller = new ManagementController(mockService);
+        assertThat(controller).isNotNull();
     }
 
 }
